@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shadrak Kiragu - Graphics Design Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<nav class="navbar">
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#logos">Logo Designs</a></li>
+        <li><a href="#business-cards">Business Cards</a></li>
+        <li><a href="#posters">Posters</a></li>
+        <li><a href="#other-graphics">Other Graphics</a></li>
+    </ul>
+</nav>
+
+<section id="home" class="home">
+    <h1 class="typingg">Hey! Welcome to My Portfolio and let's explore together.</h1>
+    <p>Explore my latest <strong>Graphic Design</strong> works!</p>
+</section>
+
+<section id="about" class="about-me">
+    <h2>About Me</h2>
+    <img src="images/GREENCARD PASSPORT.jpg" alt="Shadrak Kiragu" class="profile-image">
+    <p>Hello! I am Shadrak Kiragu, a passionate <strong>Graphic Designer</strong> with years of experience in creating visually appealing designs. Let's create something amazing together!</p>
+</section>
+
+<div class="portfolio-grid" id="portfolioGrid">
+    <div class="portfolio-card" id="logos">
+        <img src="images/skylogo.png" alt="Logo Design">
+        <h3>Logos</h3>
+        <div class="dropdown-details">
+            <button onclick="toggleDetails('logoDetails')">See Others</button>
+            <div id="logoDetails" class="details">
+                <p>Explore other logos I have designed:</p>
+                <button onclick="showCategory('logos.html')">View More Logos</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="portfolio-card" id="business-cards">
+        <img src="images/OTHER.jpg" alt="Business Card Design">
+        <h3>Business Cards</h3>
+        <div class="dropdown-details">
+            <button onclick="toggleDetails('businessDetails')">See Others</button>
+            <div id="businessDetails" class="details">
+                <p>Explore other business cards I have designed:</p>
+                <button onclick="showCategory('business_cards.html')">View More Business Cards</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="portfolio-card" id="posters">
+        <img src="images/my ratecard.png" alt="Poster Design">
+        <h3>Posters</h3>
+        <div class="dropdown-details">
+            <button onclick="toggleDetails('posterDetails')">See Others</button>
+            <div id="posterDetails" class="details">
+                <p>Explore other posters I have designed:</p>
+                <button onclick="showCategory('posters.html')">View More Posters</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="portfolio-card" id="other-graphics">
+        <img src="images/PIC EDIT 1.png" alt="Other Graphics Design">
+        <h3>Promotional Graphic</h3>
+        <div class="dropdown-details">
+            <button onclick="toggleDetails('otherDetails')">See Others</button>
+            <div id="otherDetails" class="details">
+                <p>Explore other graphics I have designed:</p>
+                <button onclick="showCategory('other_graphics.html')">View More Graphics</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="form-container">
+    <div class="tabs">
+        <button class="tab active" onclick="showForm('login')">Login</button>
+        <button class="tab" onclick="showForm('register')">Register</button>
+        <button class="tab" onclick="showForm('forgot')">Forgot Password</button>
+    </div>
+    
+    <div id="login" class="form active">
+        <h2>Login</h2>
+        <input type="email" placeholder="Email" required>
+        <input type="password" placeholder="Password" required>
+        <button>Login</button>
+    </div>
+    
+    <div id="register" class="form">
+        <h2>Register</h2>
+        <input type="text" placeholder="Full Name" required>
+        <input type="email" placeholder="Email" required>
+        <input type="password" placeholder="Password" required>
+        <button>Register</button>
+    </div>
+    
+    <div id="forgot" class="form">
+        <h2>Forgot Password</h2>
+        <input type="email" placeholder="Enter your email" required>
+        <button>Reset Password</button>
+    </div>
+</div>
+
+<script>
+    function showForm(formId) {
+        document.querySelectorAll('.form').forEach(form => form.classList.remove('active'));
+        document.getElementById(formId).classList.add('active');
+        document.querySelectorAll('.tab').forEach(tab => tab.classList.remove('active'));
+        event.target.classList.add('active');
+    }
+</script>
+
+
+<footer>
+    <p>Connect with me on social media:</p>
+    <div class="social-media">
+        <a href="https://facebook.com" target="_blank">
+            <img src="images/facebook vector.png" alt="Facebook" width="20"> Facebook
+        </a>
+        <a href="https://www.instagram.com" target="_blank"> 
+            <img src="images/instagram vector.png" alt="Instagram" width="20"> Instagram</a>
+        <a href="https://www.linkedin.com" target="_blank"> 
+            <img src="images/linkedin vector.png" alt="Linkedin" width="20"> LinkedIn</a>
+            <a href="https://wa.me/254115672839?text=Hello%20Shadrak,%20I%20found%20your%20portfolio.!" target="_blank">
+                <img src="images/whatsapp vector.png" alt="whatsapp" width="20"> &nbsp;WhatsApp
+            </a>
+    </div>
+
+
+
+
+
+
+
+   
+
+
+
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
