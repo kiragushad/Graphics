@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -9,6 +13,7 @@ body {
     background-position: center; /* Centers the image */
     background-repeat: no-repeat; /* Prevents repeating */
     background-attachment: fixed; /* Keeps it fixed when scrolling */
+    
 }
 .hit{
     color: white;
@@ -16,9 +21,10 @@ body {
 .navbar {
     background-color: grey;
     color: #fff;
-    padding: 10px;
+    padding: 20px;
     display: flex;
     justify-content: center;
+    position: relative;
 }
 .typingg {
     font-size: 30px;
@@ -49,14 +55,27 @@ body {
         border-color: transparent;
     }
 }
+.close{
+    transform: translateX(-100%);
+}
 .navbar ul {
     list-style: none;
     display: flex;
     gap: 15px;
+    transition: transform 300ms ease-in-out;
+    position: relative;
+    z-index: 999;
+}
+.navbar > i{
+    position: absolute;
+    left: 20px;
+    top: 10px;
+    display: none;
 }
 
 .navbar ul li {
     display: inline;
+
 }
 
 .navbar ul li a {
@@ -68,6 +87,15 @@ body {
     color: rgb(0, 255, 34);
     transition: color 0.5s ease-in-out;
 
+}
+.navbar ul > i{
+    position: absolute;
+    display: none;
+    height: 20px;
+    width: 20px;
+    color: white;
+    top: 10px;
+    right: 15px;
 }
 
 .home {
@@ -243,4 +271,28 @@ button:hover {
 @keyframes fadeIn {
     from { opacity: 0; transform: translateY(-10px); }
     to { opacity: 1; transform: translateY(0); }
+}
+@media only screen and (max-width:660px) {
+    .navbar ul {
+        list-style: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        flex-direction: column;
+        width: 60%;
+        padding-top: 50px;
+        text-align: left;
+        gap: 15px;
+        height: 100vh;
+        background-color: #007BFF;
+        margin-top: -1%;
+
+    }
+    .navbar ul > i{
+        display: inline;
+    }
+    .navbar > i{
+        position: absolute;
+        display: inline;
+    }
 }
