@@ -27,6 +27,7 @@ body {
     justify-content: end;
     position: relative;
     align-items: center;
+    
 }
 
 .typingg {
@@ -192,7 +193,7 @@ body {
 
 footer {
     text-align: center;
-    padding: 20px;
+    padding: 10px;
     background-color: black;
     color: #fff;
 }
@@ -315,19 +316,19 @@ button:hover {
 }
 
 #contact h2 {
-    margin-bottom: 1px;       /* Reduce the margin to bring the heading closer to the form */
+    margin-bottom: -150px;       /* Reduce the margin to bring the heading closer to the form */
     font-size: 2rem;
 }
 
 .contact-section {
     background-color: #f0f0f0;
-    padding: 50px 20px;
+    
     text-align: center;
 }
 
 .contact-section h2 {
     font-size: 28px;
-    margin-bottom: 10px;
+    
     color: blue;
 }
 
