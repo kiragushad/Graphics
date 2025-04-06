@@ -302,3 +302,63 @@ button:hover {
         right: 20px;
     }
 }
+
+#contact {
+    display: flex;
+    flex-direction: column;    /* Align elements vertically */
+    justify-content: center;   /* Center vertically */
+    align-items: center;       /* Center horizontally */
+    text-align: center;        /* Center the text */
+    color: white;              /* Change text color to white */
+    height: 100vh;             /* Make sure it takes up full height of the screen */
+   
+}
+
+#contact h2 {
+    margin-bottom: 1px;       /* Reduce the margin to bring the heading closer to the form */
+    font-size: 2rem;
+}
+
+.contact-section {
+    background-color: #f0f0f0;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.contact-section h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    color: blue;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid blue;
+    border-radius: 6px;
+    width: 100%;
+}
+
+.contact-form button {
+    padding:8px 12px;
+    font-size: 16px;
+    background-color: blue;
+    border: none;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #0056b3;
+}

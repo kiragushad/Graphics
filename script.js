@@ -26,3 +26,11 @@ links.forEach(link => {
         menu.classList.add('close')
     })
 })
+
+    const form = document.querySelector(".contact-form");
+    form.addEventListener("submit", function (e) {
+        setTimeout(() => {
+            alert("Thank you! Your message has been sent.");
+        }, 500);
+    });
+
