@@ -34,15 +34,5 @@ links.forEach(link => {
         }, 500);
     });
 
-// Get the button
-const scrollToTopBtn = document.getElementById("scrollToTopBtn");
 
-// When the user scrolls down 100px from the top of the document, show the button
-window.onscroll = function() {
-    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-        scrollToTopBtn.style.display = "block";
-    } else {
-        scrollToTopBtn.style.display = "none";
-    }
-};
 
