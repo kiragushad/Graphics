@@ -149,9 +149,16 @@ body {
 
 .portfolio-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+   
     gap: 20px;
-    padding: 20px;
+    
+    background-color: #ffffffcc; /* Optional: subtle background */
+    margin-bottom: 20px;
+    text-align: center;
+
+    max-width: 600px; /* or 800px if you want it narrower */
+  margin: 0 auto;     /* centers the container */
+  padding: 0 20px;    /* optional side padding */
 }
 
 .portfolio-card {

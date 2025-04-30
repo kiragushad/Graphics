@@ -12,10 +12,12 @@
     <nav class="navbar">
         <ul class="close">
             <li><a href="#home">Home</a></li>
-            <li><a href="#about">About Me</a></li>
+            <li><a href="#about">About Me</a></li> 
             <li><a href="#logos">Logo Designs</a></li>
-            <li><a href="#business-cards">Business Cards</a></li>
             <li><a href="#posters">Posters</a></li>
+          
+            <li><a href="#business-cards">Business Cards</a></li>
+           
             <li><a href="#other-graphics">Other Graphics</a></li>
             <li><a href="#contact">Contact</a></li>
     
@@ -50,7 +52,17 @@
             </div>
         </div>
     </div>
-
+<div class="portfolio-card" id="posters">
+        <img src="images/POSTER1.jpg" alt="Poster Design">
+        <h3>Posters</h3>
+        <div class="dropdown-details">
+            <button onclick="toggleDetails('posterDetails')">See Others</button>
+            <div id="posterDetails" class="details">
+                <p>Explore other posters I have designed:</p>
+                <button onclick="showCategory('posters.html')">View More Posters</button>
+            </div>
+        </div>
+    </div>
     <div class="portfolio-card" id="business-cards">
         <img src="images/BS1.jpg" alt="Business Card Design">
         <h3>Business Cards</h3>
@@ -63,17 +75,7 @@
         </div>
     </div>
 
-    <div class="portfolio-card" id="posters">
-        <img src="images/POSTER1.jpg" alt="Poster Design">
-        <h3>Posters</h3>
-        <div class="dropdown-details">
-            <button onclick="toggleDetails('posterDetails')">See Others</button>
-            <div id="posterDetails" class="details">
-                <p>Explore other posters I have designed:</p>
-                <button onclick="showCategory('posters.html')">View More Posters</button>
-            </div>
-        </div>
-    </div>
+    
 
     <div class="portfolio-card" id="other-graphics">
         <img src="images/PROM1.jpg" alt="Other Graphics Design">
