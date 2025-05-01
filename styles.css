@@ -182,7 +182,7 @@ body {
 }
 
 .portfolio-card img:hover { /* Remove the space before :hover */
-    transform: scale(1.2); /* Zoom in on hover */
+    transform: scale(1.05); /* Zoom in on hover */
 }
 
 .portfolio-card h3 {
